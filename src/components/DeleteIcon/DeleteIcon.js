@@ -12,7 +12,7 @@ export const DeleteIcon = (user, event, boxBgImg) => {
     deleteImg.addEventListener('click', (e) => {
       doubleCheck({
         className: 'deleteEventConfirmation',
-        message: 'Are you sure you want to delete this event',
+        message: 'Are you sure you want to delete this event?',
         fnc: async () => {
           await deleteElementCall({
             e,
