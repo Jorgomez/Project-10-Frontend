@@ -1,4 +1,4 @@
-import './showLoading.css'
+import './ShowLoading.css'
 
 export const showLoading = (element, message = 'Loading...') => {
   const loadingSpinner = document.createElement('div')
