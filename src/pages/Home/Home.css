@@ -291,13 +291,20 @@
   .boxCreatedEvents h3 {
     font-size: x-small;
   }
-  .boxjoinedEvents,
+  .boxjoinedEvents {
+    margin-top: 5px;
+  }
+  .boxCreatedEvents {
+    margin-bottom: 5px;
+  }
+
+  .boxCreatedEvents .boxjoinedEvents,
   .boxCreatedEvents {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 220px;
+    height: 210px;
     width: 90%;
   }
 
