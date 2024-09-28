@@ -5,7 +5,7 @@ import { RegisterForm } from '../../components/RegisterForm/RegisterForm'
 import {
   switcherArtLogin,
   switcherArtRegister
-} from '../../components/SwitcherFormBox/switcherFormBox'
+} from '../../components/SwitcherFormBox/SwitcherFormBox'
 
 import { loginCall } from '../../utils/Functions/Calls/loginCall'
 import { randerPage } from '../../utils/Functions/functions/randerPage'
