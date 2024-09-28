@@ -80,7 +80,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 40%;
+  height: 45%;
   width: 90%;
   color: var(--text-color1);
   border-radius: var(--border-radius-m);
@@ -292,10 +292,10 @@
     font-size: x-small;
   }
   .boxjoinedEvents {
-    margin-top: 5px;
+    margin-top: 3px;
   }
   .boxCreatedEvents {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   .boxCreatedEvents .boxjoinedEvents,

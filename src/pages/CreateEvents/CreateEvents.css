@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 50%;
-  height: 85%;
+  height: 90%;
   background-color: var(--background-color3);
   border-top-left-radius: var(--spacing-ml);
   border-bottom-left-radius: var(--spacing-ml);
@@ -43,7 +43,7 @@
   background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1726352593/posibles%20imagenes/unsplash_EVgsAbL51Rk_xgla4o.png');
   background-size: cover;
   width: 50%;
-  height: 85%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -114,10 +114,8 @@
     font-size: 20px;
   }
   .CreateEventForm {
-    height: 70%;
   }
   .boxEventCreated {
-    height: 70%;
     gap: 10px;
   }
   .titleEventcreated {
