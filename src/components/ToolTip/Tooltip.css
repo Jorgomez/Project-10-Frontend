@@ -1,0 +1,68 @@
+.tooltip {
+  position: absolute;
+  background: linear-gradient(100deg, #40585e, #2193b0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+  word-wrap: break-word;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.tooltip[style*='visible'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip-arrow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #53828e;
+}
+/* .assistantsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: fit-content;
+  height: fit-content;
+} */
+.tooltip.asisstantTooltip {
+  display: flex;
+}
+
+.userInfo {
+  min-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
+}
+.userNameTooltip {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: small;
+  color: white;
+  width: 70%;
+}
+
+.profileImg {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}

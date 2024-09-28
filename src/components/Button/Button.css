@@ -1,0 +1,19 @@
+button {
+  width: 40%;
+  height: fit-content;
+  background: linear-gradient(100deg, #40585e, #2193b0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 950px) {
+  button {
+    width: 40%;
+    height: fit-content;
+    padding: 5px;
+    font-size: 12px;
+  }
+}

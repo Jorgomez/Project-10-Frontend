@@ -1,0 +1,17 @@
+.noEventsMessage {
+  /* font-family: 'Courier New', Courier, monospace; */
+  margin: auto;
+  font-size: xx-large;
+}
+
+@media (max-width: 750px) {
+  .noEventsMessage {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 450px) {
+  .noEventsMessage {
+    font-size: small;
+  }
+}

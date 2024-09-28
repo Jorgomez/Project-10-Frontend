@@ -1,0 +1,48 @@
+footer {
+  text-align: center;
+  bottom: 0;
+  height: 10svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2px;
+  opacity: 0; /* Oculta el footer por defecto */
+  transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+body:hover footer,
+footer:hover {
+  opacity: 1; /* Muestra el footer al hacer hover en el body o en el footer */
+}
+.backToTopo img {
+  border: 1px solid #909090;
+  border-radius: 100%;
+}
+
+.backToTopo {
+  font-size: 10px;
+}
+#ulContactFooter {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  min-width: 120px;
+  gap: 5px;
+}
+
+#ulContactFooter img {
+  width: 15px;
+}
+footer h3 {
+  font-size: medium;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+@media (max-width: 500px) {
+  footer {
+    opacity: 1 !important; /* Siempre visible en pantallas pequeñas */
+  }
+}

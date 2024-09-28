@@ -1,0 +1,14 @@
+.EventCard-Home {
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.436);
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.406);
+  width: 200px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: aqua;
+}

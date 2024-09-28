@@ -1,0 +1,56 @@
+.conteinerFieldForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: box-shadow 0.3s ease;
+  background-color: #f9f9f9b5;
+}
+input[type='file'] {
+  font-size: 13px;
+  width: 70%;
+  border: 1px dashed #ccc;
+  padding: 5px;
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.659);
+  border-color: #007bff;
+}
+
+.input::placeholder {
+  font-size: small;
+  color: #99999981;
+  font-style: italic;
+}
+
+@media (max-width: 950px) {
+  .label {
+    font-size: 10px;
+    font-weight: 800;
+  }
+  .input {
+    padding: 2px;
+    font-size: 12px;
+  }
+  .input::placeholder {
+    font-size: 12px;
+  }
+  input[type='file'] {
+    padding: 2px;
+    font-size: 10px;
+  }
+}

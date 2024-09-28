@@ -1,0 +1,248 @@
+#event {
+  min-height: 80svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.eventTitle {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 60px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 100;
+  font-style: italic;
+}
+.eventsContainer {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+.eventCard {
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.436);
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.406);
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.infoBox {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 2px;
+  height: 60px;
+  position: relative;
+  gap: 20px;
+}
+
+.infoBox .date {
+  margin-left: 10px;
+  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1726852574/calendar_1_ivsujo.png');
+  background-size: cover;
+  background-position: 50%;
+  color: black;
+
+  text-align: center;
+  padding-bottom: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 16%;
+}
+
+.desContainer {
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infoBox .description {
+  font-size: 13px;
+  line-height: 1;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.infoBox .description.shrink {
+  font-size: calc(14px - 1vw);
+}
+
+.infoBox .Location {
+  font-size: 15px;
+}
+.imgLocation {
+  width: 12px;
+}
+
+.boxBgImg {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.boxBgImg > h3 {
+  color: rgba(240, 248, 255, 0.721);
+  padding: 5px;
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.408);
+}
+
+.joinEvent {
+  padding: 3px;
+  width: 30px;
+  display: flex;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(128, 128, 128, 0.406);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.187);
+}
+
+.joinEvent:hover {
+  transform: scale(1.3);
+}
+.assistantsImg {
+  background-color: rgba(128, 128, 128, 0.406);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.187);
+}
+
+.assistantsImg:hover {
+  transform: scale(1.3);
+}
+.userName {
+  font-size: 1px;
+  color: white;
+  width: 70%;
+}
+.deleteImg {
+  border: 1px solid rgba(255, 255, 255, 0.187);
+  width: 30px;
+  display: flex;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 12px;
+  z-index: 1;
+  background-color: rgba(128, 128, 128, 0.392);
+  border-radius: 50%;
+  padding: 5px;
+}
+.deleteImg:hover {
+  transform: scale(1.3);
+}
+@media (max-width: 1050px) {
+  .eventsContainer {
+    width: 95%;
+    gap: 13px;
+  }
+}
+@media (max-width: 980px) {
+  .eventTitle {
+    font-size: 40px;
+  }
+  .eventsContainer {
+    width: 95%;
+    gap: 20px;
+  }
+
+  .eventCard {
+    padding: 5px;
+    width: 250px;
+    height: 200px;
+  }
+  .infoBox {
+    gap: 15px;
+    height: 65px;
+  }
+
+  .infoBox .date {
+    margin-left: 7px;
+    font-size: 10px;
+    font-weight: 700;
+    width: 17%;
+  }
+  .infoBox .description {
+    font-size: 11px;
+  }
+
+  .infoBox .Location {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .imgLocation {
+    width: 10px;
+  }
+
+  .boxBgImg {
+    padding: 5px;
+
+    gap: 7px;
+  }
+
+  .boxBgImg > h3 {
+    font-size: small;
+  }
+
+  .joinEvent {
+    width: 25px;
+    height: 25px;
+  }
+  .assistantsImg {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+  }
+  .deleteImg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 850px) {
+  .eventsContainer {
+    width: 94%;
+    gap: 13px;
+  }
+}
+@media (max-width: 830px) {
+  .eventsContainer {
+    width: 90%;
+    gap: 25px;
+  }
+}

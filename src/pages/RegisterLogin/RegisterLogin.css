@@ -1,0 +1,131 @@
+#RegisterLogin {
+  height: 80svh;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color2);
+  padding: var(--spacing-ml);
+}
+
+form {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  width: 50%;
+  height: 80%;
+  background-color: var(--background-color3);
+  border-top-left-radius: var(--border-radius-m);
+  border-bottom-left-radius: var(--border-radius-m);
+}
+
+.switcherFormBox {
+  position: relative;
+  border-top-right-radius: var(--border-radius-m);
+  border-bottom-right-radius: var(--border-radius-m);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1727023439/project10/posters/glfzvr0ejigalvd1p0nb.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.switcherFormBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 1;
+  border-top-right-radius: var(--border-radius-m);
+  border-bottom-right-radius: var(--border-radius-m);
+}
+.switchRegisterButton {
+  position: absolute;
+  width: fit-content;
+  padding: 3px, 5px;
+  z-index: 10;
+  bottom: 10%;
+}
+.switchRegisterButtonMovile {
+  display: none;
+  width: auto;
+  padding: 7px;
+}
+
+.ArtSwichterReg,
+.ArtSwichterLog {
+  padding: var(--spacing-ml);
+  text-align: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25%;
+  height: 90%;
+  gap: 7%;
+  background-color: var(--background-color1);
+  border-radius: var(--border-radius-m);
+  font-family: var(--main-font-family);
+  color: aliceblue;
+}
+
+.logo {
+  width: 50px;
+}
+
+@media (max-width: 900px) {
+  #RegisterLogin {
+    width: 80%;
+  }
+  .ArtSwichterReg,
+  .ArtSwichterLog {
+    font-size: 15px;
+  }
+}
+@media (max-width: 650px) {
+  #RegisterLogin {
+    width: 90%;
+  }
+  .ArtSwichterReg,
+  .ArtSwichterLog {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  #RegisterLogin {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .switcherFormBox {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+  form {
+    width: 70%;
+    height: 70%;
+
+    border-radius: 15px;
+  }
+
+  .switchRegisterButtonMovile {
+    display: flex;
+    position: relative;
+    top: 10%;
+    align-self: center;
+    z-index: 10;
+    margin-bottom: px;
+  }
+}

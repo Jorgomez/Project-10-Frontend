@@ -1,0 +1,365 @@
+#home {
+  position: relative;
+  height: 80svh;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  overflow: hidden;
+}
+.homeWelcome {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.heroHome {
+  font-size: var(--font-size-big);
+  font-family: var(--main-font-family);
+  font-style: italic;
+  right: 80px;
+  bottom: 130px;
+  height: auto;
+  width: 48%;
+  display: flex;
+  color: var(--text-color4);
+}
+.buttonContainer {
+  position: relative;
+  bottom: 130px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.heroTitle {
+  font-weight: 100;
+  font-size: clamp(1.5rem, 5.5vw, 4rem);
+  word-wrap: break-word;
+  margin: 0;
+}
+.keyWords {
+  color: var(--text-color5);
+  font-weight: bold;
+  background-color: transparent;
+  transition: transform 1.5s ease;
+  display: inline-block;
+  perspective: 1000px;
+}
+.keyWords:hover {
+  border-radius: 5px;
+  background-color: var(--background-color4);
+  transform: rotateY(360deg);
+}
+
+.homeUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--main-font-family);
+}
+
+.boxjoinedEvents {
+  position: relative;
+}
+
+.welcome {
+  top: var(--spacing-s);
+  position: absolute;
+  left: 60px;
+}
+
+.boxjoinedEvents,
+.boxCreatedEvents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  width: 90%;
+  color: var(--text-color1);
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+}
+
+.joinedEventsContainer,
+.createdEvents {
+  display: flex;
+  bottom: 0;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  background-color: var(--background-color5);
+  border-radius: var(--border-radius-m);
+  padding: var(--spacing-m);
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.buttonFront {
+  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1726442437/Calendar_Vector_Design_Images_Calendar_Icon_Calendar_Icons_Calendar_Clipart_Icon_PNG_Image_For_Free_Download_giue0u.jpg');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.buttonContainer:hover .buttonFront {
+  transform: rotateY(180deg);
+}
+.buttonFront::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1727352132/Screenshot_2024-09-26_at_12.59.55_zwcl9t.png');
+
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.curvedLabel {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.curvedLabel text {
+  fill: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.EventCard-Home {
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.436);
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.406);
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 190px;
+  max-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.EventCard-Home .boxBgImg {
+  width: 100%;
+  height: 140px;
+  border-radius: 15px;
+}
+
+.EventCard-Home .infoBox {
+  padding: 5px;
+  padding-bottom: 1px;
+  height: 50px;
+  gap: 15px;
+}
+
+.EventCard-Home .date {
+  margin-left: 5px;
+  background-size: cover;
+  font-size: 9px;
+
+  width: 17%;
+}
+
+.EventCard-Home .desContainer {
+  width: 57%;
+}
+.EventCard-Home .infoBox .description {
+  font-size: 10px;
+}
+
+.EventCard-Home .infoBox .description.shrink {
+  font-size: calc(14px - 1vw);
+}
+
+.EventCard-Home .infoBox .Location {
+  font-size: 10px;
+}
+.EventCard-Home .imgLocation {
+  width: 10px;
+}
+
+.EventCard-Home .boxBgImg > h3 {
+  font-size: small;
+}
+
+.EventCard-Home .joinEvent {
+  width: 25px;
+  height: 25px;
+}
+
+.EventCard-Home .assistantsImg {
+  width: 20px;
+  height: 20px;
+  right: 10px;
+}
+
+.EventCard-Homem.deleteImg {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 950px) {
+  .heroHome {
+    right: 50px;
+  }
+  .buttonContainer {
+    left: 100px;
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 750px) {
+  .homeWelcome {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .heroHome {
+    width: 80%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+  }
+
+  .buttonContainer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: scale(0.8);
+  }
+  .welcome {
+    top: 6px;
+    left: 20px;
+    font-size: large;
+  }
+  /* .boxjoinedEvents h2 {
+    font-size: large;
+  } */
+  .boxjoinedEvents h3,
+  .boxCreatedEvents h3 {
+    font-size: small;
+  }
+  /* .boxjoinedEvents h3 {
+    align-self: self-end;
+    margin-right: 50px;
+  } */
+}
+
+@media (max-width: 450px) {
+  .buttonContainer {
+    transform: scale(0.6);
+  }
+  .welcome {
+    top: 5px;
+    font-size: small;
+  }
+  .homeUser {
+    justify-content: center;
+  }
+  /* .boxjoinedEvents h2 {
+    font-size: large;
+  } */
+  .boxjoinedEvents h3,
+  .boxCreatedEvents h3 {
+    font-size: x-small;
+  }
+  .boxjoinedEvents,
+  .boxCreatedEvents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 38%;
+    width: 90%;
+  }
+
+  .EventCard-Home {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 150px;
+    max-height: 150px;
+  }
+  .EventCard-Home .infoBox {
+    gap: var(--spacing-m);
+  }
+
+  .EventCard-Home .infoBox .date {
+    margin-left: 3px;
+    font-size: 7px;
+    width: 16%;
+  }
+  .EventCard-Home .infoBox .description {
+    font-size: 8px;
+  }
+
+  .EventCard-Home .infoBox .Location {
+    font-size: 9px;
+  }
+  .EventCard-Home .imgLocation {
+    width: 8px;
+  }
+
+  .EventCard-Home .boxBgImg {
+    padding: 5px;
+
+    gap: 7px;
+  }
+
+  .EventCard-Home .boxBgImg > h3 {
+    font-size: x-small;
+  }
+
+  .EventCard-Home .joinEvent {
+    width: 20px;
+    height: 20px;
+  }
+  .EventCard-Home .assistantsImg {
+    width: 15px;
+    height: 15px;
+    right: 10px;
+  }
+  .EventCard-Home .deleteImg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.joinedEventsContainer::-webkit-scrollbar,
+.createdEvents::-webkit-scrollbar {
+  height: 10px;
+}
+
+.joinedEventsContainer::-webkit-scrollbar-thumb,
+.createdEvents::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.573);
+  border-radius: 10px;
+}
+
+.joinedEventsContainer::-webkit-scrollbar-track,
+.createdEvents::-webkit-scrollbar-track {
+  background: transparent;
+}

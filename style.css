@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tiny5&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,266&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@266&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --background-color1: rgba(128, 128, 128, 0.406);
+  --background-color2: #274f6a78;
+  --background-color3: white;
+  --background-color4: #ff990063;
+  --background-color5: rgba(245, 245, 245, 0.301);
+  --text-color1: #ffffff;
+  --text-color2: black;
+  --text-color3: rgba(240, 248, 255, 0.721);
+  --text-color4: rgba(240, 248, 255, 0.567);
+  --text-color5: antiquewhite;
+  --main-font-family: 'Montserrat', sans-serif;
+  --spacing-xs: 3px;
+  --spacing-s: 5px;
+  --spacing-m: 10px;
+  --spacing-ml: 15px;
+  --spacing-l: 20px;
+  --spacing-xl: 30px;
+  --spacing-xxl: 40px;
+  --spacing-big: 60px;
+  --font-size-s: 5px;
+  --font-size-m: 10px;
+  --font-size-l: 20px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 40px;
+  --font-size-big: 60px;
+  --border-radius-s: 10px;
+  --border-radius-m: 15px;
+  --border-radius-l: 25px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1726402317/pexels-joshsorenson-976866_vek4zq.jpg');
+  min-height: 100svh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+article,
+header,
+footer {
+  position: relative;
+  z-index: 2;
+}
