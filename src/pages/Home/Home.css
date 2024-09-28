@@ -169,6 +169,7 @@
   width: 100%;
   height: 140px;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .EventCard-Home .infoBox {
@@ -326,8 +327,9 @@
     width: 8px;
   }
 
-  .EventCard-Home .boxBgImg {
+  .EventCard-Home div.boxBgImg {
     padding: 5px;
+    min-height: 100px;
 
     gap: 7px;
   }
