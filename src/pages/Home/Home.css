@@ -281,9 +281,11 @@
   .homeUser {
     justify-content: center;
   }
-  /* .boxjoinedEvents h2 {
-    font-size: large;
-  } */
+  .boxjoinedEvents h3 {
+    display: flex;
+    align-self: self-end;
+    margin-right: 15px;
+  }
   .boxjoinedEvents h3,
   .boxCreatedEvents h3 {
     font-size: x-small;
@@ -294,7 +296,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 38%;
+    height: 220px;
     width: 90%;
   }
 
