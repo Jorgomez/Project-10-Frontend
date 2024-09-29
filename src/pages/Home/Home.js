@@ -3,7 +3,6 @@ import { HeroHome } from '../../components/HeroHome.js/HeroHome'
 import { UserHome } from '../../components/HomeUser/HomeUser'
 import { randerPage } from '../../utils/Functions/functions/randerPage'
 import { Events } from '../Events/Events'
-
 import './Home.css'
 
 export const Home = () => {
