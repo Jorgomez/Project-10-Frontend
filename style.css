@@ -71,10 +71,3 @@ footer {
 .swal2-confirm.swal2-styled {
   width: fit-content;
 }
-
-@media (max-width: 500px) {
-  .swal2-container.swal2-center.swal2-backdrop-show {
-    width: 40%;
-    height: 30%;
-  }
-}
