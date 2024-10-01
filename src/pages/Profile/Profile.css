@@ -28,12 +28,12 @@
   display: flex;
   justify-self: center;
   position: absolute;
-
   height: 150%;
   width: 50%;
   border-radius: 50%;
   border: 1px solid whitesmoke;
   bottom: -53%;
+  object-fit: cover;
 }
 
 .profileImgBox {
