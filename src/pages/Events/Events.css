@@ -10,7 +10,7 @@
   margin-top: 20px;
   margin-bottom: 40px;
   font-size: 60px;
-  color: white;
+  color: var(--text-color1);
   font-family: 'Shadows Into Light', cursive;
   font-weight: 100;
   font-style: italic;
@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  color: var(--text-color3);
 }
 .infoBox {
   display: flex;
@@ -49,10 +50,10 @@
 
 .infoBox .date {
   margin-left: 10px;
-  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1726852574/calendar_1_ivsujo.png');
+  background-image: url('https://res.cloudinary.com/digcf0lad/image/upload/v1728424391/calendar_10_l7dhzb.png');
   background-size: cover;
   background-position: 50%;
-  color: black;
+  color: var(--text-color3);
 
   text-align: center;
   padding-bottom: 4px;
@@ -108,7 +109,7 @@
 }
 
 .boxBgImg > h3 {
-  color: rgba(240, 248, 255, 0.721);
+  color: var(--text-color3);
   padding: 5px;
   border-radius: 15px;
   background-color: rgba(128, 128, 128, 0.408);

@@ -25,6 +25,7 @@ input[type='file'] {
   border: 1px dashed #ccc;
   padding: 5px;
 }
+
 .input:focus {
   outline: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.659);
@@ -35,6 +36,34 @@ input[type='file'] {
   font-size: small;
   color: #99999981;
   font-style: italic;
+}
+
+input[type='file']::-webkit-file-upload-button {
+  background: linear-gradient(100deg, #40585e, #2193b0);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type='file']::-webkit-file-upload-button:hover {
+  background: linear-gradient(100deg, #2193b0, #245497);
+}
+
+input[type='file']::-moz-file-upload-button {
+  background: linear-gradient(100deg, #40585e, #2193b0);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type='file']::-moz-file-upload-button:hover {
+  background: linear-gradient(100deg, #2193b0, #245497);
 }
 
 @media (max-width: 950px) {
@@ -54,3 +83,6 @@ input[type='file'] {
     font-size: 10px;
   }
 }
+
+/* background: linear-gradient(100deg, #40585e, #2193b0);
+border-radius: var(--border-radius-s); */
